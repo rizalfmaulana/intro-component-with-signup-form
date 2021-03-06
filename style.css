@@ -29,6 +29,7 @@ main {
 }
 
 .container {
+  margin: 30px auto;
   display: grid;
   grid-template-columns: auto auto;
 }
