@@ -20,16 +20,37 @@ body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: var(--Red);
-}
-
-main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+main {
+}
+
 .container {
-  margin: 30px auto;
+  /* margin: 30px auto; */
   display: grid;
   grid-template-columns: auto auto;
+}
+
+.left {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.head {
+  border: 1px solid var(--blue);
+  width: 70%;
+  background-color: var(--blue);
+  margin-bottom: 20px;
+}
+
+form {
+  border: 1px solid white;
+  width: 70%;
+}
+
+form input {
+  display: block;
 }
