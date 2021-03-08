@@ -23,41 +23,102 @@ body {
 }
 
 main {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
 }
 
 .container {
-  /* margin: 30px auto; */
   display: grid;
   grid-template-columns: auto auto;
 }
 
 .left {
+  padding: 100px;
   width: 50vw;
-  margin: 0 auto;
+}
+
+.left h1 {
+  color: white;
+  margin-top: 30px;
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.left p {
+  color: white;
+  font-size: 15px;
 }
 
 .right {
   width: 50vw;
-  margin: 0 auto;
 }
 
 .head {
+  width: 80%;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
   border: 1px solid var(--blue);
-  width: 70%;
   background-color: var(--blue);
   margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 12px 6px -6px var(--DarkBlue);
+}
+
+.head p span {
+  color: var(--GrayishBlue);
 }
 
 form {
   border: 1px solid white;
-  width: 70%;
+  width: 80%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 12px 6px -6px var(--DarkBlue);
 }
 
 form input {
   display: block;
   margin-bottom: 20px;
   width: 100%;
-  padding: 10px;
-  border-radius: 20px;
+  outline: none;
+  border: 1px solid var(--GrayishBlue);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+form input:focus {
+  border: 1px solid var(--DarkBlue);
+}
+
+form button {
+  width: 100%;
+  background-color: var(--Green);
+  padding: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form p {
+  font-size: 10px;
+  text-align: center;
+  color: var(--GrayishBlue);
+}
+
+form p span {
+  color: var(--Red);
+  font-weight: 700;
 }
